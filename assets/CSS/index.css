@@ -1,0 +1,100 @@
+/* :root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#A5A79A;
+    --border:.1rem solid rbg(255, 255, 255, .3);
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;1,200&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+.header{
+    padding: 1.5rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   z-index: 1000;
+   top: 0; left: 0; right: 0;
+   position: fixed;
+   border-bottom: var(--border);
+   background: var(--main-color);
+}
+.header .logo {
+    color: #13131a;
+    font-size: 1.5rem;
+}
+
+.header .logo a{
+   
+    text-decoration: none;
+}
+.header .logo span{
+    color: yellow;
+  
+}
+.header .navbar a{
+    margin: 0 1rem;
+    list-style: none;
+    font-size: 1.6rem;
+    color: black;
+}
+.header .navbar a:hover{
+    color: #dddddd;
+    padding-bottom: 5rem;
+    border-bottom: .1rem solid var(--main-color);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+form{
+    background: transparent;
+    color: var(--border);
+    border-radius: 1.5rem;
+}
+#size{
+    padding: 1em 1.5em;
+    color: white;
+    background: #4d5061;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px 1px;
+    font-size: 1.2 rem;
+   width: 30%;
+}
+#btn{
+    background: yellow;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+    font-size: 1.2rem;
+    width: 5%;
+}
+
+#size:focus
+#size:hover{
+    outline: none;
+    border: 1px solid #d3ad7f;
+}
+#size option{
+    background: #4d5061;
+} */
