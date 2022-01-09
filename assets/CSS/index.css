@@ -1,16 +1,35 @@
-/* :root{
+:root{
     --main-color:#d3ad7f;
     --black:#13131a;
     --bg:#A5A79A;
     --border:.1rem solid rbg(255, 255, 255, .3);
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;1,200&display=swap');
+
 *{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
 }
 
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+body{
+    background:#A5A79A ;
+}
 .header{
-    padding: 1.5rem 7%;
+    padding: .4rem 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,18 +38,22 @@
    position: fixed;
    border-bottom: var(--border);
    background: var(--main-color);
+   
 }
 .header .logo {
     color: #13131a;
     font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 .header .logo a{
-   
+    list-style: none;
+    /* text-transform: capitalize; */
     text-decoration: none;
 }
 .header .logo span{
-    color: yellow;
+    color: white;
+    text-transform: capitalize;
   
 }
 .header .navbar a{
@@ -38,12 +61,26 @@
     list-style: none;
     font-size: 1.6rem;
     color: black;
+    text-decoration: none;
+   
 }
 .header .navbar a:hover{
     color: #dddddd;
     padding-bottom: 5rem;
     border-bottom: .1rem solid var(--main-color);
+}
+/* .home{
+    margin-top: 4rem ;
+    background: url(/assets/images/007d4b0857eef42775e6a7f148279c3f.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+   height: 50vh;
 } */
+
+    
+
 
 
 
