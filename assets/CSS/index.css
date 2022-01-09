@@ -69,15 +69,24 @@ body{
     padding-bottom: 5rem;
     border-bottom: .1rem solid var(--main-color);
 }
-/* .home{
+.home{
     margin-top: 4rem ;
-    background: url(/assets/images/007d4b0857eef42775e6a7f148279c3f.jpg);
+    background: url(/assets/images/home.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
    height: 50vh;
-} */
+}
+.home span{
+    color: white;
+}
+.home p{
+    margin-top: .8rem 5%;
+    font-size: 1.9rem;
+}
+.home p span{
+    color: black;
+}
 
     
 
@@ -135,3 +144,35 @@ form{
 #size option{
     background: #4d5061;
 } */
+
+@media(max-width:600px){
+    html{
+        font-size: 60%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100;
+        background: white;
+        width: 20rem;
+        height: calc(50vh-9.5rem);
+    }
+    .header .navbar a{
+        display: inline;
+        color: var(--black);
+        margin: 1.3rem;
+        padding: .2rem;
+        font-size: 2rem;
+    }
+    
+    .home span{
+        color: #13131a;
+        font-size: 1.9rem;
+    }
+    .home p{
+        font-size: 2rem;
+
+    }
+}
