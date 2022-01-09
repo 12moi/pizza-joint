@@ -87,7 +87,9 @@ body{
 .home p span{
     color: black;
 }
-
+.product span{
+    color: yellow;
+}
 .product .container-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
