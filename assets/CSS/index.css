@@ -138,37 +138,55 @@ body{
     font-weight: lighter;
     font-size: 1.5rem;
  }
-
+.order{
+    background: url(/assets/images/tasty.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
+}
+.order h1{
+    color: #4d5061;
+}
 form{
     background: transparent;
     color: var(--border);
     border-radius: 1.5rem;
 }
-#size{
+#pizza-size{
+    padding: 1em 1.5em;
+    color: white;
+    background: #4d5061;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px 1px;
+    font-size: 1.2 rem;
+   width: 30%;
+}
+#pizza-crust{
+    padding: 1em 1.5em;
+    color: white;
+    background: #4d5061;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px 1px;
+    font-size: 1.2 rem;
+   width: 30%;
+}
+#pizza-toppings{
+    padding: 1em 1.5em;
+    color: white;
+    background: #4d5061;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px 1px;
+    font-size: 1.2 rem;
+   width: 30%;
+}
+#pizza-number{
     padding: 1em 1.5em;
     color: white;
     background: #4d5061;
@@ -194,7 +212,7 @@ form{
 }
 #size option{
     background: #4d5061;
-} */
+}
 
 @media(max-width:600px){
     html{
