@@ -121,47 +121,44 @@
             <h1>order your pizza now!</h1>
             <form action="">
                 pizza size<br>
-                <select name="size" id="pizza-size">
+                <select name="size" id="pizza-size" required>
                     <option disabled selected>Size</option>
                     <option value="Normal">Normal</option>
                     <option value="medium">medium</option>
                     <option value="Large">Large</option>
                 </select><br>
                 pizza crust<br>
-                <select name="crust" id="pizza-crust">
+                <select name="crust" id="pizza-crust" required>
                     <option disabled selected>crust</option>
-                    <option value="">Thin crust</option>
-                    <option value="">Neapolitan crust</option>
-                    <option value="">Chicago Deep Dish</option>
+                    <option value="">Thin crust @ Ksh.100</option>
+                    <option value="">Neapolitan crust @ Ksh.150</option>
+                    <option value="">Chicago Deep Dish @ Ksh. 200</option>
                 </select><br>
                 pizza toppings<br>
-                <select name="toppings" id="pizza-toppings">
+                <select name="toppings" id="pizza-toppings" required>
                     <option disabled selected>topping</option>
-                    <option value="">Fresh basil</option>
-                    <option value="">Sausage</option>
-                    <option value="">Black Olives</option>
+                    <option value="Fresh basil">Fresh basil @ Ksh. 220</option>
+                    <option value="Sausage">Sausage @ Ksh. 280</option>
+                    <option value="black Olives">Black Olives @ Ksh.300</option>
                 </select><br>
-                pizza number<br>
-                <select name="number" id="pizza-number">
-                  <label for="number"> 
-                    <option disabled selected>number</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                    <option value="">13</option>
-                    </label> -->
+                
+                    </label> 
+                    <label for="number">choose number of pizza's</label><br>
+                    <input type="number" class="number" id="pizza-number" placeholder="Number of pizza's" min="1" required>
              </select><br> 
-                <button id="btn" onclick="Summary()">Checkout </button>
+              
             </form>
+            <a href="#summary">
+                <button type="submit" class="btn" id="checkout">Checkout</button>
+            </a>
+
+            <div class="order-summary" id="sumorder">
+                <h2>order summary</h2>
+                <h3>Your Order summary is as follows:</h3>
+                <ol id="list" class="text-center sum">
+            
+                </ol>
+            </div>
         </section>  
     </div> 
     <!-- jquery CDN link -->
