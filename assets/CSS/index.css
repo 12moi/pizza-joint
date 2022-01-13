@@ -216,99 +216,54 @@ form{
 #size option{
     background: #4d5061;
 }
-.review .container-box{
-    box-sizing: border-box;
-    /* float: left; */
-    display: flex;
-    justify-content: space-between;
-    /* width: 10%;
-    padding: 2%;
-    padding-left:70px;
-    padding-right: 2%; */
-    /* height: 475px; */
-    /* margin:30px; */
-    margin-right:2%;
-    /* margin-bottom: 70px; */
-    /* background-color: #FEDE00; */
-    /* line-height:2; */
 
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem; */
-}
-.review .heading span{
+
+.contact .heading span{
     color: yellow;
 }
-.review .heading .fas fa-quote{
-    color: #d3ad7f;
-}
-.review .container-box .box{
-    text-align: center;
-    border: var(--border);
-    padding: 3rem 2rem;
-}
-.review .container-box .box p{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    /* color: #ccc; */
-    padding: 2rem;
-}
-.review .container-box .box .user{
-    object-fit: cover;
-    height: 7rem;
-    width: 7rem;
- 
-}
-.review .container-box .box h3{
-    padding: 1rem 0;
-    font-size: 2rem;
-}
-.review .container-box .box .star i{
- color: yellow;
- font-size: 1.5rem;
-}
-.contact{
-    background: #d3ad7f;
-}
-.contact .form{
+.contact form{
     
-    padding: 5rem 2rem;
-    flex: 1 1 45rem;
+    padding: 1rem 1rem;
     text-align: center;
 }
 .contact .form h3{
     color: #fff;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: .5rem;
 }
 .contact  form .inputBox{
  display: flex;
  align-items: center;
- margin-top: 2rem;
+ margin-top: 1rem;
  margin-bottom: 1rem;
  border: var(--border);
- background: var(--black);
+ background: #4d5061;
  margin-left: 20%;
  margin-right: 20%;
 }
 .contact  form .inputBox span{
     color: #fff;
-    font-size: 2rem;
-    padding-left: 2rem;
+    font-size: 1rem;
+    padding-left: 1rem;
 }
 .contact  form .inputBox input{
-    width: 100%;
+    width: 50%;
     background: none;
     color: #fff;
     text-transform: none;
-    font-size: 1.7rem;
-    padding: 2rem;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 .contact form .btn{
-    background: #13131a;
+    background: #4d5061;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     border-radius: 1.2rem;
+    cursor: pointer;
+}
+.contact form .btn:hover{
+    color: black;
+    background: #d3ad7f;
 }
 
 
