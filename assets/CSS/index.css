@@ -216,6 +216,57 @@ form{
 #size option{
     background: #4d5061;
 }
+.review .container-box{
+    box-sizing: border-box;
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 10%;
+    padding: 2%;
+    padding-left:70px;
+    padding-right: 2%; */
+    /* height: 475px; */
+    /* margin:30px; */
+    margin-right:2%;
+    /* margin-bottom: 70px; */
+    /* background-color: #FEDE00; */
+    /* line-height:2; */
+
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem; */
+}
+.review .heading span{
+    color: yellow;
+}
+.review .heading .fas fa-quote{
+    color: #d3ad7f;
+}
+.review .container-box .box{
+    text-align: center;
+    border: var(--border);
+    padding: 3rem 2rem;
+}
+.review .container-box .box p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    /* color: #ccc; */
+    padding: 2rem;
+}
+.review .container-box .box .user{
+    object-fit: cover;
+    height: 7rem;
+    width: 7rem;
+ 
+}
+.review .container-box .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+.review .container-box .box .star i{
+ color: yellow;
+ font-size: 1.5rem;
+}
 
 
 
