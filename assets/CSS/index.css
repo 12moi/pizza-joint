@@ -267,7 +267,49 @@ form{
  color: yellow;
  font-size: 1.5rem;
 }
-
+.contact{
+    background: #d3ad7f;
+}
+.contact .form{
+    
+    padding: 5rem 2rem;
+    flex: 1 1 45rem;
+    text-align: center;
+}
+.contact .form h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.contact  form .inputBox{
+ display: flex;
+ align-items: center;
+ margin-top: 2rem;
+ margin-bottom: 1rem;
+ border: var(--border);
+ background: var(--black);
+ margin-left: 20%;
+ margin-right: 20%;
+}
+.contact  form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.contact  form .inputBox input{
+    width: 100%;
+    background: none;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+.contact form .btn{
+    background: #13131a;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1.2rem;
+}
 
 
 
