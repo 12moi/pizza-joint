@@ -170,26 +170,29 @@
               <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.790610041559!2d36.78241801475394!3d-1.300486199051471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6bf7445dc1%3A0x940b62a3c8efde4c!2sMoringa%20School!5e0!3m2!1sen!2ske!4v1641309579143!5m2!1sen!2ske"  allowfullscreen="" loading="lazy"></iframe>
             </div> -->
             
-           <form action="">
+           <form action="" id="myForm" onsubmit="validation()">
                <h3>get in touch</h3>
+               <div id="error_message">
+
+               </div>
                <div class="inputBox">
                    <span class="fas fa-user">
   
                    </span>
-                   <input type="text" placeholder="name">
+                   <input type="text" id="name" placeholder="name">
                </div>
                <div class="inputBox">
                   <span class="fas fa-envelope">
   
                   </span>
-                  <input type="temail" placeholder="email">
+                  <input type="email" id="email" placeholder="email">
                </div>
-               <!-- <div class="inputBox">
+               <div class="inputBox">
                   <span class="fas fa-phone">
   
                   </span>
-                  <input type="number" placeholder="number">
-              </div> -->
+                  <input type="number" id="phone" placeholder="number">
+              </div>
               <input class="btn" type="submit" value="contact now">
            </form>
         </section>
@@ -197,31 +200,9 @@
         
         <!-- Start of footer section -->
         <section class="footer">
-            <div class="box-container">
-                <div class="box">
-                    <h3>pizza joint</h3>
-                </div>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-whatsapp"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                </div>
-                <div class="box">
-                    <h3>Quick links</h3>
-                </div>
-                <div class="share">
-                    <a href="#" class="links"><i class="fas fa-arrow-right">home</i></a>
-                    <a href="#" class="links"><i class="fas fa-arrow-right">product</i></a>
-                    <a href="#" class="links"><i class="fas fa-arrow-right">order</i></a>
-                    <a href="#" class="links"><i class="fas fa-arrow-right">contact</i></a>
-                </div>
-                
+            <p>2022 &copy All Rights Reserved.</p>
             </div>
         </section>
-        <p>2022 &copy All Rights Reserved.</p>
-       
         <!-- End of footer section -->
     </div> 
     <!-- jquery CDN link -->

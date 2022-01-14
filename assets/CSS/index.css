@@ -48,7 +48,6 @@ body{
 
 .header .logo a{
     list-style: none;
-    /* text-transform: capitalize; */
     text-decoration: none;
 }
 .header .logo span{
@@ -231,6 +230,14 @@ form{
     text-transform: uppercase;
     font-size: .5rem;
 }
+.contact form #error_message{
+    margin-bottom: 20px;
+    padding: 0%;
+    background: #fff;
+    transition: all 0.5s ease;
+    text-align: center;
+    font-size: 14px;
+}
 .contact  form .inputBox{
  display: flex;
  align-items: center;
@@ -265,6 +272,7 @@ form{
     color: black;
     background: #d3ad7f;
 }
+
 
 
 
