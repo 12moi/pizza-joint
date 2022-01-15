@@ -40,7 +40,7 @@ There are no known bugs so for hence the progam works as expected, although some
 ---------------------------------------------------|------------------------------------|-------------------------------|
 |Enter select your pizza's size, crust & topping   | e.g normal, thin crust, Fresh basil|total                          |
 |Enter your location                               | e.g rongai                         | your pizza will be delivered to your place                        |
-|
+
 
 ## Support and Contact
 Any contribution are welcome through project cloning.<br>

@@ -199,12 +199,21 @@ form{
     font-size: 1.2 rem;
    width: 30%;
 }
-.order .btn{
+.order  .btn{
     background: #4d5061;
     cursor: pointer;
     border: 1px solid #dddddd;
     font-size: 1.2rem;
-    width: 5%;
+    width: 8%;
+}
+.order .btn:hover{
+    background: #d3ad7f;
+    color: #4d5061;
+}
+.order #list{
+    border-radius: 1.7rem;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 #size:focus
@@ -237,13 +246,42 @@ form{
     background: #d3ad7f;
     color: #4d5061;
 }
-.order #Deliver1{
+.order #Delivery1{
     padding: 1.1rem;
     border-radius: 1rem;
     margin-bottom: 1%;
     cursor: pointer;
     background: #4d5061;
 }
+.order #Delivery1:hover{
+    background: #d3ad7f;
+    color: #4d5061;
+}
+.order .username{
+    padding: 1em 1.5em;
+    border: 1px solid #4d5061;
+    border-radius: 5px;
+    margin: 2px 1px;
+    font-size: 1.2 rem;
+   width: 30%;
+}
+.order .userphone{
+    padding: 1em 1.5em;
+    border: 1px solid #4d5061;
+    border-radius: 5px;
+    margin: 2px 1px;
+    font-size: 1.2 rem;
+   width: 30%;
+}
+.order .userlocation{
+    padding: 1em 1.5em;
+    border: 1px solid #4d5061;
+    border-radius: 5px;
+    margin: 2px 1px;
+    font-size: 1.2 rem;
+   width: 30%;
+}
+
 
 .contact .heading span{
     color: yellow;
