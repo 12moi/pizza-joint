@@ -215,8 +215,35 @@ form{
 #size option{
     background: #4d5061;
 }
-
-
+.order #Delivery{
+    background: #4d5061;
+    padding: 1.1rem;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+.order #Delivery:hover{
+    background: #d3ad7f;
+    color: #4d5061;
+}
+.order #Deliverynot{
+    padding: 1.1rem;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+    cursor: pointer;
+    background: #4d5061;
+}
+.order #Deliverynot:hover{
+    background: #d3ad7f;
+    color: #4d5061;
+}
+.order #Deliver1{
+    padding: 1.1rem;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+    cursor: pointer;
+    background: #4d5061;
+}
 
 .contact .heading span{
     color: yellow;

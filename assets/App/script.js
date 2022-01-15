@@ -1,11 +1,109 @@
 
 
-function getYourPizza(pizza_size, pizza_crust, pizza_toppings, pizza_number){
-    this.size=size;
-    this.crust=crust;
-    this.toppings=toppings;
-    this.number=number;
-}
+$(function(){
+    $('.summary').hide();
+    $('.customer_data').hide();
+
+    $("#checkout").click(function(){
+        let size=$("#pizza-size option:selected").val();
+        let crust=$("#pizza-crust option:selected").val();
+        let topping=$("#pizza-topping option:selected").val();
+        let number=$("#pizza-number option:selected").val();
+       
+        // console.log(size); testing the function
+
+        let order=(s, c, t, n, total)=>{
+            return {s, c, t, n, total};
+        };
+         
+        let price, totalPrice;
+        switch(size){
+            case size="normal":
+                price= 280;
+                if(crust=== "Thin crust"){
+                    totalPrice=(price*number)+150;
+                }else if(crust==="Neapolitan crust"){
+                    totalPrice=(price*number)+200;
+                }else if(crust==="Chicago Deep Dish"){
+                    totalPrice=(price*number)+250;
+                }else{
+                    totalPrice=(price*number)+300;
+                }
+                break;
+            case size="medium":
+                price=380;
+                if(crust=== "Thin crust"){
+                    totalPrice=(price*number)+150;
+                }else if(crust==="Neapolitan crust"){
+                    totalPrice=(price*number)+200;
+                }else if(crust==="Chicago Deep Dish"){
+                    totalPrice=(price*number)+250;
+                }else{
+                    totalPrice=(price*number)+300;
+                }
+                break;
+            case size="large":
+                price=450;
+                if(crust=== "Thin crust"){
+                    totalPrice=(price*number)+150;
+                }else if(crust==="Neapolitan crust"){
+                    totalPrice=(price*number)+200;
+                }else if(crust==="Chicago Deep Dish"){
+                    totalPrice=(price*number)+250;
+                }else{
+                    totalPrice=(price*number)+300;
+                }
+                break;   
+        }
+        switch(topping){
+            case topping="Fresh basil":
+                totalPrice=topping + 80;
+                break;
+        case topping="Sausage":
+                totalPrice=topping + 120;
+                break; 
+        case topping="black Olives":
+                totalPrice=topping + 180;
+                break;  
+        }
+        
+        let newOrder = order(size, crust, topping, number, totalPrice);
+
+        console.log(newOrder);
+        //Write to the order
+        $('.summary').slideDown(2000);
+        $('.customer_data').slideUp();
+        $('#list').slideDown();
+        $('.deliver').show(1000);
+        $('.delivernot').show(1000);
+
+        $('#list').text(" ");
+        $("#list").append("<br>"   + "<br>" + "Size :   "
+            + newOrder.s + "<br>" + "Crust :     "
+            + newOrder.c + "<br>" + "Toppings :     "
+            + newOrder.t + "<br>" + "Number :    "
+            + newOrder.n + "<br>" + "Total Price :  "
+            + newOrder.total + "<br><br>").css('background-color', 'white').css('font-size', '24px');
+    });
+
+    //Deliver
+    $(".deliver").click(function () {
+        $('.summary').slideUp();
+        $('#list').slideUp();
+        $('.summary').text("Provide location details").slideDown();
+        $('.deliver').hide(1000);
+        $('.delivernot').hide(1000);
+        $('.customer_data').slideDown();
+    });
+
+
+    //Pick Up
+    $(".delivernot").click(function () {
+
+    });
+  
+    
+})
 
 
 // Validating the contact form

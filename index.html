@@ -120,7 +120,7 @@
         <!-- Start of order section -->
          <section class="order" id="order">
             <h1>order your pizza now!</h1>
-            <form action=""  onsubmit="getYourPizza()">
+            <form action="">
                 pizza size<br>
                 <select name="size" id="pizza-size" required>
                     <option disabled selected>Size</option>
@@ -131,16 +131,16 @@
                 pizza crust<br>
                 <select name="crust" id="pizza-crust" required>
                     <option disabled selected>crust</option>
-                    <option value="">Thin crust @ Ksh.100</option>
-                    <option value="">Neapolitan crust @ Ksh.150</option>
-                    <option value="">Chicago Deep Dish @ Ksh. 200</option>
+                    <option value="">Thin crust </option>
+                    <option value="">Neapolitan crust </option>
+                    <option value="">Chicago Deep Dish </option>
                 </select><br>
                 pizza toppings<br>
                 <select name="toppings" id="pizza-toppings" required>
                     <option disabled selected>topping</option>
-                    <option value="Fresh basil">Fresh basil @ Ksh. 220</option>
-                    <option value="Sausage">Sausage @ Ksh. 280</option>
-                    <option value="black Olives">Black Olives @ Ksh.300</option>
+                    <option value="Fresh basil">Fresh basil </option>
+                    <option value="Sausage">Sausage </option>
+                    <option value="black Olives">Black Olives </option>
                 </select><br>
                 
                     </label> 
@@ -165,13 +165,13 @@
                         <input type="text" class="form-control cdata" placeholder="Enter your Name:">
                         <input type="text" class="form-control cdata" placeholder="Enter your Phone Number:">
                         <input type="text" class="form-control cdata" placeholder="Enter your Location:">
-                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                        <button id="Delivery1" class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
                     </form>
                     <div class="col-sm-3"></div>
                 </div>
                 <div class="d-block mx-auto text-center" >
-                 <button class="deliver">Make Delivery</button>
-                 <button class="delivernot">Pick Up</button>
+                 <button id="Delivery" class="deliver">Make Delivery</button>
+                 <button id="Deliverynot" class="delivernot">Pick Up</button>
                 </div>
             </div>
         </section> 
