@@ -281,6 +281,14 @@ form{
     font-size: 1.2 rem;
    width: 30%;
 }
+.order form #DeliveranceNote{
+    margin-bottom: 20px;
+    padding: 0%;
+    background: #fff;
+    transition: all 0.5s ease;
+    text-align: center;
+    font-size: 14px;
+}
 
 
 .contact .heading span{

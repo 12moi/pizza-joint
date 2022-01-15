@@ -161,11 +161,13 @@
                 </ol>
                 <div class="customer_data">
                     <div class="col-sm-3"></div>
-                    <form action="" class="deliverlocation">
-                        <input type="text" class="username" placeholder="Enter your Name:"><br>
-                        <input type="text" class="userphone" placeholder="Enter your Phone Number:"><br>
-                        <input type="text" class="userlocation" placeholder="Enter your Location:"><br>
-                        <button id="Delivery1" class="">Make Delivery</button>
+                    
+                    <form action="" id="deliverlocation" class="deliverlocation" onsubmit="validate()">
+                        <div class="DeliveranceNote"></div>
+                        <input type="text" id="username" class="username" placeholder="Enter your Name:"><br>
+                        <input type="text" id="userphone" class="userphone" placeholder="Enter your Phone Number:"><br>
+                        <input type="text" id="userlocation" class="userlocation" placeholder="Enter your Location:"><br>
+                        <button type="submit" id="Delivery1" class="">Make Delivery</button>
                     </form>
                     <div class="col-sm-3"></div>
                 </div>
