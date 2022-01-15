@@ -120,7 +120,7 @@
         <!-- Start of order section -->
          <section class="order" id="order">
             <h1>order your pizza now!</h1>
-            <form action="">
+            <form action=""  onsubmit="getYourPizza()">
                 pizza size<br>
                 <select name="size" id="pizza-size" required>
                     <option disabled selected>Size</option>
@@ -150,7 +150,7 @@
               
             </form>
             <a href="#summary">
-                <button type="submit" class="btn" id="checkout">Checkout</button>
+                <button type="submit"  class="btn" id="checkout">Checkout</button>
             </a>
 
             <div class="order-summary" id="sumorder">
@@ -159,6 +159,20 @@
                 <ol id="list" class="text-center sum">
             
                 </ol>
+                <div class="customer_data">
+                    <div class="col-sm-3"></div>
+                    <form action="" class="form-control col-sm-6 data">
+                        <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                        <input type="text" class="form-control cdata" placeholder="Enter your Phone Number:">
+                        <input type="text" class="form-control cdata" placeholder="Enter your Location:">
+                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                    </form>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="d-block mx-auto text-center" >
+                 <button class="deliver">Make Delivery</button>
+                 <button class="delivernot">Pick Up</button>
+                </div>
             </div>
         </section> 
          <!--End of order section  -->
@@ -166,9 +180,6 @@
         <!-- Start of contact section -->
         <section class="contact" id="contact">
             <h1 class="heading"><span>contact</span> us</h1>
-            <!-- <div class="row">
-              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.790610041559!2d36.78241801475394!3d-1.300486199051471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6bf7445dc1%3A0x940b62a3c8efde4c!2sMoringa%20School!5e0!3m2!1sen!2ske!4v1641309579143!5m2!1sen!2ske"  allowfullscreen="" loading="lazy"></iframe>
-            </div> -->
             
            <form action="" id="myForm" onsubmit="validation()">
                <h3>get in touch</h3>

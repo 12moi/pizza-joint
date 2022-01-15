@@ -1,5 +1,13 @@
 
 
+function getYourPizza(pizza_size, pizza_crust, pizza_toppings, pizza_number){
+    this.size=size;
+    this.crust=crust;
+    this.toppings=toppings;
+    this.number=number;
+}
+
+
 // Validating the contact form
 function validation(){
    let name=document.getElementById("name").value;
@@ -26,8 +34,5 @@ function validation(){
     alert("Thank you for contacting us!");
    return false;
 }
-// alert("Thank you for contacting us!");
-//    return false;
-//    myForm=document.getElementById("myForm").reset();
-//    alert("cleared")
+
 }

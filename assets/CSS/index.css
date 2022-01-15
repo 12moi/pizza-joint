@@ -200,7 +200,7 @@ form{
    width: 30%;
 }
 .order .btn{
-    background: yellow;
+    background: #4d5061;
     cursor: pointer;
     border: 1px solid #dddddd;
     font-size: 1.2rem;
@@ -215,6 +215,7 @@ form{
 #size option{
     background: #4d5061;
 }
+
 
 
 .contact .heading span{
