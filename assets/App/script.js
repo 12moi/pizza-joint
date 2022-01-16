@@ -1,95 +1,127 @@
 
 
+
+
+
+
+let price, crust_price, topping_price;
+let total=0;
+
+function getYourpizza(name, size, crust, total){
+   this.name=name;
+   this.size=size;
+   this.crust=crust;
+   this.toppings=topping;
+   this.total=total;
+
+}
+
+
 $(function(){
     $('.summary').hide();
     $('.customer_data').hide();
 
     $("#checkout").click(function(){
-        let Size=$("#pizza-size option:selected").val();
-        let Crust=$("#pizza-crust option:selected").val();
-        let Topping=$("#pizza-topping option:selected").val();
-        let Number=$("#pizza-number option:selected").val();
+        let pizzasize=$("#pizza-size option:selected").val();
+        let pizzacrust=$("#pizza-crust option:selected").val();
+        let pizzatopping=[];
+        let pizzanumber=$("#pizza-number option:selected").val();
+        $.each($("input[name='toppings']:checked"),function(){
+            pizzatopping.push($(this).val());
+        });
+        
        
-        // console.log(size); testing the function
-
-        let order=(S, C, T, N, Total)=>{
-            return {S, C, T, N, Total};
+        let order=(s, c, t, n, total)=>{
+            return {s, c, t, n, total};
         };
-         
-        let price, TotalPrice;
-        switch(Size){
-            case Size="normal":
+        console.log(order);
+        let price, totalprice;
+        switch(pizzasize){
+            case size="normal":
                 price= 280;
-                if(Crust=== "Thin crust"){
-                    TotalPrice=(price*number)+150;
-                }else if(Crust==="Neapolitan crust"){
-                    TotalPrice=(price*number)+200;
-                }else if(Crust==="Chicago Deep Dish"){
-                    TotalPrice=(price*number)+250;
+                if(pizzacrust=== "Thin crust"){
+                    totalprice=(price*number)+150;
+                }else if(pizzacrust==="Neapolitan crust"){
+                    totalprice=(price*number)+200;
+                }else if(pizzacrust==="Chicago Deep Dish"){
+                    totalprice=(price*number)+250;
                 }
-                // else{
-                //     TotalPrice=(price*number)+300;
-                // }
+               
+              
                 break;
-            case Size="medium":
+            case size="medium":
                 price=380;
-                if(Crust=== "Thin crust"){
-                    TotalPrice=(price*number)+150;
-                }else if(Crust==="Neapolitan crust"){
-                    TotalPrice=(price*number)+200;
-                }else if(Crust==="Chicago Deep Dish"){
-                    TotalPrice=(price*number)+250;
+                if(pizzacrust=== "Thin crust"){
+                    totalprice=(price*number)+150;
+                }else if(pizzacrust==="Neapolitan crust"){
+                    totalprice=(price*number)+200;
+                }else if(pizzacrust==="Chicago Deep Dish"){
+                    totalprice=(price*number)+250;
                 }
-                // else{
-                //     TotalPrice=(price*number)+300;
-                // }
+               
                 break;
-            case Size="large":
+            case size="large":
                 price=450;
-                if(Crust=== "Thin crust"){
-                    totalPrice=(price*number)+150;
-                }else if(Crust==="Neapolitan crust"){
-                    TotalPrice=(price*number)+200;
-                }else if(Crust==="Chicago Deep Dish"){
-                    TotalPrice=(price*number)+250;
+                if(pizzacrust=== "Thin crust"){
+                    totalprice=(price*number)+150;
+                }else if(pizzacrust==="Neapolitan crust"){
+                    totalprice=(price*number)+200;
+                }else if(pizzacrust==="Chicago Deep Dish"){
+                    totalprice=(price*number)+250;
                 }
-                // else{
-                //     TotalPrice=(price*number)+300;
-                // }
+                
                 break;   
         }
-        switch(Topping){
-            case Topping="Fresh basil":
-                TotalPrice=Topping + 80;
+        switch(pizzatopping){
+            case pizzatopping="Fresh basil":
+                totalprice=topping + 80;
                 break;
-        case Topping="Sausage":
-                TotalPrice=Topping + 120;
+        case pizzatopping="Sausage":
+                totalprice=topping + 80;
                 break; 
-        case Topping="black Olives":
-                TotalPrice=Topping + 180;
+        case pizzatopping="black Olives":
+                totalprice=topping + 80;
                 break;  
         }
         
-        let newOrder = order(Size, Crust, Topping, Number, TotalPrice);
+        let topping_value=pizzatopping.length*50;
 
-        console.log(newOrder);
-        //Write to the order
-        $('.summary').slideDown(2000);
-        $('.customer_data').slideUp();
-        $('#list').slideDown();
-        $('.deliver').show(1000);
-        $('.delivernot').show(1000);
+        if((pizzasize=="0") && (pizzacrust=="0")){
+           
+             alert("Please select pizza size and crust")
+        }else{
+             $('.summary').slideDown(2000);
+             $('.customer_data').slideUp();
+             $('#list').slideDown();
+             $('.deliver').show(1000);
+             $('.delivernot').show(1000);
+        }
+        total=price + crust_price + topping_value;
+
+        // console.log(total);
+
+        let checkoutTotal=0;
+        checkoutTotal=checkoutTotal+total;
+
+
+        let newOrder = order(pizzasize, pizzacrust, pizzatopping, pizzanumber, total);
+
+        // console.log(newOrder);
+
 
         $('#list').text(" ");
-        $("#list").append("<br>"   + "<br>" + "Size :   "
-            + newOrder.s + "<br>" + "Crust :     "
-            + newOrder.c + "<br>" + "Toppings :     "
-            + newOrder.t + "<br>" + "Number :    "
-            + newOrder.n + "<br>" + "Total Price :  "
+        $("#list").append("<br>"   + "<br>" + "pizzasize :   "
+            + newOrder.s + "<br>" + "pizzacrust :     "
+            + newOrder.c + "<br>" + "pizzatopping :     "
+            + newOrder.t + "<br>" + "pizzanumber :    "
+            + newOrder.n + "<br>" + "total  :  "
             + newOrder.total + "<br><br>").css('background-color', 'white').css('font-size', '24px');
+
+
     });
 
     //Deliver
+    let deliveryamount=200;
     $(".deliver").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
@@ -97,6 +129,7 @@ $(function(){
         $('.deliver').hide(1000);
         $('.delivernot').hide(1000);
         $('.customer_data').slideDown();
+        $(".Finalbill").append("Your bill plus delivery fee is:"  +deliveryamount).css('background-color', 'white');
     });
 
 
@@ -105,35 +138,41 @@ $(function(){
 
     });
   
-    
+    event.preventDefault();
 })
 
 
 // Validating the Delivery form
-function validate(){
+function Validation(){
     let name=document.getElementById("username").value;
     let location=document.getElementById("userlocation").value;
     let phone=document.getElementById("userphone").value;
     let DeliveranceNote=document.getElementById("DeliveranceNote");
-    var text;
+    let text;
     //  DeliveranceNote.style.padding="10px";
     if(name.length <2){
-        alert("Please enter valid Name");
+       alert("Please enter valid Name");
         
+     
     }
+   
     if(location.length <2){
      alert("Please enter valid location");
      
    }
    if(isNaN(phone)|| phone.length !=10){
-     alert("Please enter valid Phone Number")
-     
- }else{
-     alert("Thank you your Pizza will be delivered to you!");
-    return false;
+     alert("Please enter valid Phone Number");
+    
+ }
+ else {
+     alert("Thank you your Pizza will be delivered to you");
+
  }
   document.getElementById("deliverlocation").reset();
+
+  
  }
+ 
 
 // Validating the contact form
 function validation(){

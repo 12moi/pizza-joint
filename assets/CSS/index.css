@@ -150,10 +150,11 @@ body{
 .order h2{
     color: #fff;
 }
-form{
-    background: transparent;
-    color: var(--border);
+
+.order form{
+   background: #fff;
     border-radius: 1.5rem;
+    font-size: 1.1rem;
 }
 #pizza-size{
     padding: 1em 1.5em;
@@ -254,6 +255,17 @@ form{
     background: #4d5061;
 }
 .order #Delivery1:hover{
+    background: #d3ad7f;
+    color: #4d5061;
+}
+.order #finalbill{
+    padding: 1.1rem;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+    cursor: pointer;
+    background: #4d5061;
+}
+.order #finalbill:hover{
     background: #d3ad7f;
     color: #4d5061;
 }
