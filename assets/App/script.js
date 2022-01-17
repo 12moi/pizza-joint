@@ -198,7 +198,7 @@ function validation(){
     return false;
 }else{
     alert("Thank you for contacting us!");
-   return false;
+   return true;
 }
 
 }
