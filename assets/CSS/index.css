@@ -70,7 +70,7 @@ body{
 }
 .home{
     margin-top: 4rem ;
-    background: url(/assets/images/home.jpg);
+    background: url(assets/images/home.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,7 +138,7 @@ body{
     font-size: 1.5rem;
  }
 .order{
-    background: url(/assets/images/tasty.jpg);
+    background: url(assets/images/tasty.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
